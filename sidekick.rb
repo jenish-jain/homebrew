@@ -4,8 +4,8 @@
 class Sidekick < Formula
     desc "Oh, that's my dumb friend"
     homepage ""
-    url "https://github.com/jenish-jain/sidekick/archive/refs/tags/v1.0.tar.gz"
-    sha256 "47d57a1729e077bb6e47e6c1c94055f2868007e972d8991f75f38ce0090d762f"
+    url "https://github.com/jenish-jain/sidekick/archive/refs/tags/v1.0.1.tar.gz"
+    sha256 "769605df3e9bb94a7821fc5d34b55905960b48f4fa0e2e8b959b6a7e5efe1fc6"
     license "Apache-2.0"
   
     # depends_on "cmake" => :build
