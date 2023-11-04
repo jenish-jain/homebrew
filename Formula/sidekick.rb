@@ -8,17 +8,17 @@ class Sidekick < Formula
   version "2.0.1"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/jenish-jain/sidekick/releases/download/v2.0.1/sidekick_2.0.1_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "e6926ad5084408e32ce91c8d8b6861de2d42a2c29b60d9809922876e7e1040ef"
+    if Hardware::CPU.intel?
+      url "https://github.com/jenish-jain/sidekick/archive/refs/tags/v2.0.1/sidekick_2.0.1_darwin_amd64.tar.gz"
+      sha256 "0554b8484451bdf0080902ee77a495e9bb2be11ab9071e256177dc2128c0feff"
 
       def install
         bin.install "sidekick"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/jenish-jain/sidekick/releases/download/v2.0.1/sidekick_2.0.1_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "24fe2f316f89a9d9781b0aae3ce15634f37a8548ed50d5b3dbb3b5f43724931f"
+    if Hardware::CPU.arm?
+      url "https://github.com/jenish-jain/sidekick/archive/refs/tags/v2.0.1/sidekick_2.0.1_darwin_arm64.tar.gz"
+      sha256 "046fa52bdc70f578a1f22179e6bbcd031d52d0878e4ab735b44f99ae930a54fb"
 
       def install
         bin.install "sidekick"
@@ -28,16 +28,16 @@ class Sidekick < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jenish-jain/sidekick/releases/download/v2.0.1/sidekick_2.0.1_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "b0359395d6e0e65b5379cc17b4f145f181795dc310e03bf11f6c10774179b9dd"
+      url "https://github.com/jenish-jain/sidekick/archive/refs/tags/v2.0.1/sidekick_2.0.1_linux_arm64.tar.gz"
+      sha256 "1edb8927a814a0656110f0e7436bd12e609f4e1b8b0be1b6c4fe8d73692d0ddb"
 
       def install
         bin.install "sidekick"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jenish-jain/sidekick/releases/download/v2.0.1/sidekick_2.0.1_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "8a1e4686a5680cf7c7eb80397c25c4aba5638887ce561fe9e0ea8444102886a1"
+      url "https://github.com/jenish-jain/sidekick/archive/refs/tags/v2.0.1/sidekick_2.0.1_linux_amd64.tar.gz"
+      sha256 "b04690b8b386bf315811b9ed67258ac180478084b0457ba36b90bc2a79d2fc0b"
 
       def install
         bin.install "sidekick"
