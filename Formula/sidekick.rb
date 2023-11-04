@@ -7,7 +7,7 @@ class Sidekick < Formula
     version "2.0.0"
     bottle :unneeded
     url "https://github.com/jenish-jain/sidekick/archive/refs/tags/v2.0.0.tar.gz"
-    sha256 "d64a6e6ba5263a9c7fb2b63bc8e5a145237669f3"
+    sha256 "769605df3e9bb94a7821fc5d34b55905960b48f4fa0e2e8b959b6a7e5efe1fc6"
     license "Apache-2.0"
   
     # depends_on "cmake" => :build
