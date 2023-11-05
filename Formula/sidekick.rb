@@ -5,20 +5,20 @@
 class Sidekick < Formula
   desc "Oh, that's my dumb friend"
   homepage "https://github.com/jenish-jain/sidekick"
-  version "2.1.3"
+  version "2.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jenish-jain/sidekick/releases/download/v2.1.3/sidekick_2.1.3_darwin_amd64.tar.gz"
-      sha256 "3d2e2b5190f809ac28c8ac4708a6fcd0763ef29511bd1df090f0c08582afd747"
+      url "https://github.com/jenish-jain/sidekick/releases/download/v2.2.0/sidekick_2.2.0_darwin_amd64.tar.gz"
+      sha256 "25ddfe92e52434466cd4d4a76decb00a2bf97cc7cc0172aea36a14632dbe3da0"
 
       def install
         bin.install "sidekick"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jenish-jain/sidekick/releases/download/v2.1.3/sidekick_2.1.3_darwin_arm64.tar.gz"
-      sha256 "e4bfe6d7cd329245db0981b81b9e76544a78b27b2bc6c15ff89bb3d23ae14e45"
+      url "https://github.com/jenish-jain/sidekick/releases/download/v2.2.0/sidekick_2.2.0_darwin_arm64.tar.gz"
+      sha256 "a35664188a333709faa9b96da5d1d21a46b59090de7384ae20195aee1c8d53d9"
 
       def install
         bin.install "sidekick"
@@ -28,16 +28,16 @@ class Sidekick < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jenish-jain/sidekick/releases/download/v2.1.3/sidekick_2.1.3_linux_arm64.tar.gz"
-      sha256 "212151021c54132c9e3f0d429b5ad30e4632da80703f25f65c6251ad58248b82"
+      url "https://github.com/jenish-jain/sidekick/releases/download/v2.2.0/sidekick_2.2.0_linux_arm64.tar.gz"
+      sha256 "184be9431f2efc385d0334d7fe1be27084f583060a705ce1ea271813f6b1e874"
 
       def install
         bin.install "sidekick"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jenish-jain/sidekick/releases/download/v2.1.3/sidekick_2.1.3_linux_amd64.tar.gz"
-      sha256 "db6607fdb6d3134538159a644182b9a322f8ac96bde8d6ccaf5c311bc1f05a02"
+      url "https://github.com/jenish-jain/sidekick/releases/download/v2.2.0/sidekick_2.2.0_linux_amd64.tar.gz"
+      sha256 "bca781e965ddb6cc35d3d8375e6bbc877a15cfffea8ea8ac3f648d1d85442017"
 
       def install
         bin.install "sidekick"
