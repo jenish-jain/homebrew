@@ -5,20 +5,20 @@
 class Sidekick < Formula
   desc "Oh, that's my dumb friend"
   homepage "https://github.com/jenish-jain/sidekick"
-  version "2.3.1"
+  version "2.4.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/jenish-jain/sidekick/releases/download/v2.3.1/sidekick_2.3.1_darwin_amd64.tar.gz"
-      sha256 "776edb94a12338a39b41b1e95b34b9264524ca7520550b3a2fbbba6c05665068"
+    if Hardware::CPU.arm?
+      url "https://github.com/jenish-jain/sidekick/releases/download/v2.4.0/sidekick_2.4.0_darwin_arm64.tar.gz"
+      sha256 "c28d1e587c0786ca18e5c3eba9eeb7b5e1bc5c8c1da6a4a645b6c5123e68eebc"
 
       def install
         bin.install "sidekick"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/jenish-jain/sidekick/releases/download/v2.3.1/sidekick_2.3.1_darwin_arm64.tar.gz"
-      sha256 "30c1fd411b1bf9d995eb3456cb3d6da62bd516974859fb0bd220bff95313ef0a"
+    if Hardware::CPU.intel?
+      url "https://github.com/jenish-jain/sidekick/releases/download/v2.4.0/sidekick_2.4.0_darwin_amd64.tar.gz"
+      sha256 "461a3be79bf938678a896d41efc4d10074e3f3910493e5fc7844b34196f85b55"
 
       def install
         bin.install "sidekick"
@@ -27,17 +27,17 @@ class Sidekick < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jenish-jain/sidekick/releases/download/v2.3.1/sidekick_2.3.1_linux_arm64.tar.gz"
-      sha256 "07e4b0f40e7514223a51f4a645f21967633324ba9f014cb2af0a53809be14317"
+    if Hardware::CPU.intel?
+      url "https://github.com/jenish-jain/sidekick/releases/download/v2.4.0/sidekick_2.4.0_linux_amd64.tar.gz"
+      sha256 "1ce30fa66f96ba5dabbb248d258cace54df7386f1d091c741b2230363772a8d1"
 
       def install
         bin.install "sidekick"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/jenish-jain/sidekick/releases/download/v2.3.1/sidekick_2.3.1_linux_amd64.tar.gz"
-      sha256 "7554dfbee83b2274fd4e734545a12225de87fabbf0e124da540934d2cc08968f"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/jenish-jain/sidekick/releases/download/v2.4.0/sidekick_2.4.0_linux_arm64.tar.gz"
+      sha256 "d0983df56bd96bd149a9918f806874da82f9d8b407704a3a61806c755cb676e9"
 
       def install
         bin.install "sidekick"
