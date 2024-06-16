@@ -4,7 +4,7 @@
 class Clarity < Formula
     desc "A cli tool to give clarity on your gpay expenses"
     homepage "https://github.com/jenish-jain/clarity"
-    url "https://github.com/jenish-jain/clarity/blob/main/clarity.tar.gz"
+    url "https://github.com/jenish-jain/clarity/raw/main/clarity.tar.gz"
     version "v0.0.1"
     sha256 "14cd5fd773043a9f3ddb25395340c8cc3e8beaf7b332bc2d528eb15ac83c4469"
     license ""
